@@ -1,0 +1,94 @@
+
+/*************************
+ Bootstrap Custom Container
+************************/
+.container,
+.container-fluid,
+.container-lg,
+.container-md,
+.container-sm,
+.container-xl,
+.container-xxl {
+  width: 100%;
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container,
+  .container-sm {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container,
+  .container-md,
+  .container-sm {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    max-width: 960px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl {
+    max-width: 1200px;
+  }
+}
+
+@media (min-width: 1400px) {
+  .container,
+  .container-lg,
+  .container-md,
+  .container-sm,
+  .container-xl,
+  .container-xxl {
+    max-width: 1200px;
+  }
+}
+
+.row {
+  --bs-gutter-x: 30px;
+}
+.row.no-gutters {
+  --bs-gutter-x: 0px;
+}
+.no-gutters>.col, .no-gutters>[class*=col-] {
+  padding-right: 0;
+  padding-left: 0;
+}
+a {
+  text-decoration: none;
+}
+
+.container .row div[class^=col-] {
+  position: relative;
+}
+.mx-n-15px{
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.px-15px{
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.mb-30px{
+  margin-bottom: 30px;
+}
+.mb-n-30px{
+  margin-bottom: -30px;
+}
